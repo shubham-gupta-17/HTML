@@ -51,6 +51,12 @@
             <input id="no" type="radio" name="answer" value="no" required>
             <label for="no">NO</label><br>
 
+            <!--checkbox, MCQ by using checked the box is bydefault checked-->
+            <label for="name">
+                <input type="checkbox" id="name" name="personality" checked>Loving
+            </label>
+            <br>
+
             <!--DROPDOWN LIST -->
             <label for="speed">Relative Speed(ends in -er): </label>
             <select id="speed" name="speed">
@@ -69,11 +75,12 @@
             </datalist>
             <br>
 
-
+            <!-- Type message ,input in a box-->
             <label for="message">Meaningful Message: </label><br>
             <textarea required rows="8" cols="40">Type your message here</textarea>
             <br>
 
+            <!-- submit form button-->
             <input type="submit" value="Form My Story!">
             <!--instead of input as submit we can also create a button for submit-->
             <button type="submit">Submit Button</button>
