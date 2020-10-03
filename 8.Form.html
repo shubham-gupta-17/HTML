@@ -16,10 +16,10 @@
     <section id="main">
         <h1>Complete the Form -<br> Complete the Story!</h1>
         <hr>
-        <!--Add your form below:-->
+        <!--Add your form below: -->
         <form action="/story.html" method="GET">
             <label for="animal-1">Animal: </label><br>
-            <input type="text" id="animal-1" name="animal-1" required>
+            <input type="text" id="animal-1" name="animal-1" placeholder="type your input" required>
             <br>
 
             <label for="animal-2">Another Animal: </label><br>
@@ -42,12 +42,13 @@
             <input type="text" id="num-1" name="num-1" required>
             <br>
 
-            <!-- ADD RADIO BUTTON-->
+            <!-- ADD RADIO BUTTON we can connect label with input by wrapping input within label tag but adding a for element is considered best option-->
             <span>Yes or No: </span>
             <input id="yes" type="radio" name="answer" value="yes" required>
             <label for="yes">YES</label>
 
-            <input id="no" type="radio" name="answer" value="yes" required>
+            <label><input type="radio" name="answer" required>NO</label>
+            <input id="no" type="radio" name="answer" value="no" required>
             <label for="no">NO</label><br>
 
             <!--DROPDOWN LIST -->
@@ -74,6 +75,8 @@
             <br>
 
             <input type="submit" value="Form My Story!">
+            <!--instead of input as submit we can also create a button for submit-->
+            <button type="submit">Submit Button</button>
         </form>
 
     </section>
