@@ -1,0 +1,23 @@
+.heading {
+    color: red;
+    text-align: center;
+    background-color: black;
+}
+
+.paragraph {
+    color: red;
+    text-align: center;
+}
+
+body {
+    background-color: burlywood;
+}
+
+table {
+    height: 40%;
+    left: 10%;
+    margin: 20px auto;
+    overflow-y: scroll;
+    position: static;
+    width: 80%;
+}
