@@ -1,16 +1,34 @@
+/* selector{
+    property:value;
+} */
+
+body {
+    background-color: burlywood;
+    background-image: url("https://content.codecademy.com/courses/learn-css-selectors-visual-rules/hypnotize_bg.png");
+    /* it will fit the image according to the screen size */
+    background-size: cover;
+}
+
 .heading {
     color: red;
+    /*in hex: #AA4139 */
     text-align: center;
     background-color: black;
+    /* set the border of the class heading content */
+    border: 7px solid purple;
+    /* we can give our custom RGB color also, the 4th parameter decides the opacity*/
+    border: 7px solid rgba(255, 135, 180, 0.5);
+    /* view of content displayed in this class */
+    font-size: 60px;
+    font-weight: bold;
+    opacity: 0.95;
+    /* changes the view of curson on the content enclosed by heading class */
+    cursor: pointer;
 }
 
 .paragraph {
     color: red;
     text-align: center;
-}
-
-body {
-    background-color: burlywood;
 }
 
 table {
@@ -20,4 +38,12 @@ table {
     overflow-y: scroll;
     position: static;
     width: 80%;
+}
+
+li {
+    cursor: pointer;
+    /* removes the dot of list */
+    list-style: none;
+    /* displays all the list in one line  */
+    display: inline-block;
 }
