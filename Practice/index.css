@@ -2,6 +2,13 @@
     property:value;
 } */
 
+
+/* * has lowest specifity */
+
+* {
+    text-align: center;
+}
+
 body {
     background-color: burlywood;
     background-image: url("https://content.codecademy.com/courses/learn-css-selectors-visual-rules/hypnotize_bg.png");
@@ -9,7 +16,7 @@ body {
     background-size: cover;
 }
 
-.heading {
+.heading:hover {
     color: red;
     /*in hex: #AA4139 */
     text-align: center;
@@ -29,6 +36,19 @@ body {
 .paragraph {
     color: red;
     text-align: center;
+}
+
+p {
+    color: blue;
+    /*Now what happens is that many computers dont have all the fonts, it might be possible that some computers dont have
+    the font which you are using hence to make sure that fonts are avaiable we use google fonts */
+    font-family: Helvetica;
+    font-weight: bold;
+    font-style: italic;
+    text-decoration: underline;
+    text-transform: uppercase;
+    /* this will add spacing between lines */
+    line-height: 50px;
 }
 
 table {
